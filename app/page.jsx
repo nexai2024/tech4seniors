@@ -277,7 +277,7 @@ const HomePage = ({ navigate }) => (
     </section>
 
     {/* Call to Action Section */}
-    <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-6 md:px-12 text-center">
+    <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-black py-20 px-6 md:px-12 text-center">
       <div className="container mx-auto max-w-3xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Simplify Your Tech Life?</h2>
         <p className="text-xl md:text-2xl mb-10">
