@@ -13,7 +13,7 @@ import { redirect } from 'next/navigation'
  * Displays user-specific information and a logout option.
  * This page is intended to be protected and only accessible after authentication.
  */
-const ClientPortalPage = ({ navigate }) => {
+const ClientPortalPage = () => {
   const { user, userId, isAuthReady, signOut } = useFirebase();
   if (!user)
     redirect('sign-in')
@@ -21,15 +21,15 @@ const ClientPortalPage = ({ navigate }) => {
   useEffect(() => {
     if (isAuthReady && !user) {
       // In a real Next.js app, you'd use router.push('/login')
-      navigate('contact'); // Redirect to contact/login page if not authenticated
+      redirect('/contact'); // Redirect to contact/login page if not authenticated
       console.log("Redirecting unauthenticated user from portal.");
     }
-  }, [isAuthReady, user, navigate]);
+  }, [isAuthReady, user]);
 
   const handleLogout = async () => {
     try {
       await signOut();
-      navigate('home'); // Redirect to home page after logout
+      redirect('/'); // Redirect to home page after logout
       console.log("User logged out successfully.");
     } catch (error) {
       console.error("Error logging out:", error);
