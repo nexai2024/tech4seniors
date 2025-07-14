@@ -14,7 +14,7 @@ import TestimonialCard from '../components/TestimonialCard';
  * @param {object} props - Component props.
  * @param {function} props.navigate - Function to navigate to other pages (simulated for this environment).
  */
-const HomePage = ({ navigate }) => (
+const HomePage = () => (
   <>
     {/* Hero Section */}
     <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 px-6 md:px-12 text-center">
@@ -44,25 +44,21 @@ const HomePage = ({ navigate }) => (
             icon="M10 21h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-7"
             title="Custom Support"
             description="Personalized troubleshooting for your computer, phone, tablet, and smart home devices."
-            navigate={() => navigate('services')} // Use the navigate prop
           />
           <ServiceCard
             icon="M12 22v-4h4v-4M2 10l10-8 10 8M6 17v-7h12v7a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4Z"
             title="Installation & Setup"
             description="Hassle-free setup of new devices, Wi-Fi, printers, smart TVs, and more."
-            navigate={() => navigate('services')} // Use the navigate prop
           />
           <ServiceCard
             icon="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
             title="Patient Coaching"
             description="One-on-one guidance on using specific apps, online safety, and digital communication."
-            navigate={() => navigate('services')} // Use the navigate prop
           />
           <ServiceCard
             icon="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M10 13h4M10 17h4"
             title="Comprehensive Training"
             description="Structured lessons to master essential tech skills like video calls, email, and online banking."
-            navigate={() => navigate('services')} // Use the navigate prop
           />
         </div>
         <div className="text-center mt-12">

@@ -1,6 +1,7 @@
 // components/ServiceCard.js
 "use client"; // This component uses onClick, so it must be a Client Component.
 
+import Link from 'next/link';
 import React from 'react';
 
 /**
@@ -11,7 +12,7 @@ import React from 'react';
  * @param {string} props.description - Brief description of the service.
  * @param {function} props.navigate - Function to navigate to the detailed services page.
  */
-const ServiceCard = ({ icon, title, description, navigate }) => (
+const ServiceCard = ({ icon, title, description }) => (
   <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center border border-gray-200 hover:shadow-xl transition-shadow duration-300">
     <div className="bg-blue-100 text-blue-600 p-4 rounded-full mb-6">
       {/* Lucide icon SVG for visual representation of the service */}
@@ -21,12 +22,13 @@ const ServiceCard = ({ icon, title, description, navigate }) => (
     </div>
     <h3 className="text-2xl font-semibold text-gray-900 mb-3">{title}</h3>
     <p className="text-gray-700 text-lg mb-6">{description}</p>
+    <Link href="/services">
     <button
-      onClick={navigate}
       className="mt-auto bg-blue-500 hover:bg-blue-600 text-white py-2 px-5 rounded-lg text-md font-medium shadow-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300"
     >
       Learn More
     </button>
+    </Link>
   </div>
 );
 
