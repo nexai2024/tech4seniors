@@ -331,13 +331,13 @@ const ContactPage = () => {
             Prefer to speak with someone directly?
           </p>
           <p className="text-2xl font-bold text-blue-700">
-            Phone: <a href="tel:+15551234567" className="hover:underline">(555) 123-4567</a>
+            Phone: <a href="tel:+12677769766" className="hover:underline">(555) 123-4567</a>
           </p>
           <p className="text-2xl font-bold text-blue-700">
-            Email: <a href="mailto:info@seniortechsolutions.com" className="hover:underline">info@seniortechsolutions.com</a>
+            Email: <a href="mailto:info@tech4seniors.help" className="hover:underline">info@seniortechsolutions.com</a>
           </p>
           <p className="text-lg text-gray-600">
-            Operating Hours: Monday - Friday, 9:00 AM - 5:00 PM EST
+            Operating Hours: Monday - Sunday, 9:00 AM - 11:00 PM EST
           </p>
         </div>
       </div>
