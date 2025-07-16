@@ -4,12 +4,12 @@ import NavLink from "@/components/NavLink";
 import Image from "next/image";
 export default function Header() {
   return (
-    <header className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg py-4 px-6 md:px-12">
+    <header className="bg-gradient-to-r from-blue-400 to-indigo-700 text-white shadow-lg py-4 px-6 md:px-12">
       <nav className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="text-3xl font-bold tracking-tight mb-4 md:mb-0">
           <Image src="/tech4seniors.png" alt="Tech4Seniors Logo" width={200} height={100} />
         </div>
-        <ul className="flex flex-wrap justify-center space-x-4 md:space-x-8 text-lg font-medium">
+        <ul className="flex flex-wrap justify-center space-x-4 md:space-x-8 text-xl font-bold">
           <li>
             <Link href="/">
             <button>
