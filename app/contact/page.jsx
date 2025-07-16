@@ -217,7 +217,7 @@ const ContactPage = () => {
                 <option value="">Select a service...</option>
                 <option value="Custom Support">Custom Support</option>
                 <option value="Installation & Setup">Installation & Setup</option>
-                <option value="Patient Coaching">Patient Coaching</option>
+                <option value="Patience-Focused Coaching">Patience-Focused Coaching</option>
                 <option value="Comprehensive Training">Comprehensive Training</option>
                 <option value="General Inquiry">General Inquiry</option>
               </select>

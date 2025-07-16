@@ -6,6 +6,8 @@
 import React from 'react';
 import ServiceCard from '../components/ServiceCard'; // Import reusable components
 import TestimonialCard from '../components/TestimonialCard';
+import Link from 'next/link';
+
 
 /**
  * HomePage Component
@@ -26,12 +28,13 @@ const HomePage = () => (
           Empowering senior citizens with personalized, patient, and easy-to-understand technology assistance.
           From setting up new devices to mastering video calls, we're here for you.
         </p>
+        <Link href="/booking">
         <button
-          onClick={() => navigate('contact')} // Use the navigate prop from layout
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300 text-xl"
         >
           Book a Free Consultation
         </button>
+        </Link>
       </div>
     </section>
 
@@ -52,7 +55,7 @@ const HomePage = () => (
           />
           <ServiceCard
             icon="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
-            title="Patient Coaching"
+            title="Patience-Focused Coaching"
             description="One-on-one guidance on using specific apps, online safety, and digital communication."
           />
           <ServiceCard

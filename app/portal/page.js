@@ -6,7 +6,7 @@
 import React, { useEffect } from 'react';
 import { useFirebase } from '../../context/FirebaseContext'; // Adjust path for context import
 import { redirect } from 'next/navigation'
-
+import { Link } from 'next/link';
 
 /**
  * ClientPortalPage Component
@@ -95,6 +95,14 @@ const ClientPortalPage = () => {
             >
               Access Resources
             </button>
+            <Link href="/booking">
+            <button
+              onClick={() => console.log("Navigate to exclusive resources")}
+              className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-6 rounded-lg shadow-md transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-purple-300 text-xl"
+            >
+              Schedule A Session
+            </button>
+            </Link>
           </div>
         </div>
       </div>

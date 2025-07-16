@@ -29,7 +29,7 @@ const ServicesPage = () => (
           "Get clear, simple explanations for complex problems",
           "On-site or remote assistance available"
         ]}
-        image="https://placehold.co/600x400/D1E9F7/2C3E50?text=Custom+Support"
+        image="/custom-support.png"
         imageAlt="Senior man receiving patient tech support"
       />
 
@@ -44,12 +44,12 @@ const ServicesPage = () => (
           "Smart TV and streaming device configuration",
           "Smart home device installation (thermostats, lights, speakers)"
         ]}
-        image="https://placehold.co/600x400/E0F2F7/2C3E50?text=Installation+Setup"
+        image="/setup.png"
         imageAlt="Tech expert setting up a new device for a senior"
         reverse={true} // Alternate layout
       />
 
-      {/* Service Detail: Patient Coaching */}
+      {/* Service Detail: Patience-Focused Coaching */}
       <ServiceDetail
         title="Patient 1-on-1 Coaching"
         description="Want to learn how to use a specific app, manage your photos, or stay safe online? Our coaching sessions are tailored to your interests and skill level. We provide gentle, step-by-step guidance in a comfortable, pressure-free environment."
@@ -60,7 +60,7 @@ const ServicesPage = () => (
           "Using social media to connect with family and friends",
           "Navigating specific apps and software"
         ]}
-        image="https://placehold.co/600x400/C8E6F7/2C3E50?text=Patient+Coaching"
+        image="/patience-focused.png"
         imageAlt="Senior woman learning from a tech coach"
       />
 
@@ -75,7 +75,7 @@ const ServicesPage = () => (
           "Understanding your smartphone or tablet",
           "Managing digital documents and files"
         ]}
-        image="https://placehold.co/600x400/B2D8F7/2C3E50?text=Comprehensive+Training"
+        image="/training.webp"
         imageAlt="Group of seniors in a tech training class"
         reverse={true} // Alternate layout
       />

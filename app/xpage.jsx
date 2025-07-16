@@ -205,7 +205,7 @@ const HomePage = ({ navigate }) => (
           />
           <ServiceCard
             icon="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
-            title="Patient Coaching"
+            title="Patience-Focused Coaching"
             description="One-on-one guidance on using specific apps, online safety, and digital communication."
             navigate={() => navigate('services')}
           />
@@ -366,7 +366,7 @@ const ServicesPage = () => (
         reverse={true} // Alternate layout
       />
 
-      {/* Service Detail: Patient Coaching */}
+      {/* Service Detail: Patience-Focused Coaching */}
       <ServiceDetail
         title="Patient 1-on-1 Coaching"
         description="Want to learn how to use a specific app, manage your photos, or stay safe online? Our coaching sessions are tailored to your interests and skill level. We provide gentle, step-by-step guidance in a comfortable, pressure-free environment."
@@ -953,7 +953,7 @@ const ContactPage = () => {
                 <option value="">Select a service...</option>
                 <option value="Custom Support">Custom Support</option>
                 <option value="Installation & Setup">Installation & Setup</option>
-                <option value="Patient Coaching">Patient Coaching</option>
+                <option value="Patience-Focused Coaching">Patience-Focused Coaching</option>
                 <option value="Comprehensive Training">Comprehensive Training</option>
                 <option value="General Inquiry">General Inquiry</option>
               </select>
